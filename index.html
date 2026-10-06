@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lazy Susan Size Calculator | Home Reorganised</title>
+<meta name="description" content="Free Lazy Susan cabinet size calculator to find the right organizer size for your kitchen cabinet.">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+input, button {
+  padding: 10px;
+  margin: 8px 0;
+  width: 100%;
+}
+button {
+  background: #333;
+  color: white;
+  border: none;
+}
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+}
+</style>
+</head>
 
+<body>
+
+<h1>Lazy Susan Cabinet Size Calculator</h1>
+
+<p>Enter your cabinet width to find a recommended Lazy Susan organizer size.</p>
+
+<label>Cabinet width (in inches):</label>
+
+<input id="width" type="number" placeholder="Example: 36">
+
+<button onclick="calculate()">Calculate</button>
+
+<div id="result"></div>
+
+<p>
+More home organization ideas:
+<a href="https://homereorganised.com">Home Reorganised</a>
+</p>
+
+<script>
+function calculate() {
+let width = document.getElementById("width").value;
+let size = width - 4;
+
+document.getElementById("result").innerHTML =
+"Recommended Lazy Susan size: approximately " + size + " inches";
+}
+</script>
+
+</body>
+</html>
