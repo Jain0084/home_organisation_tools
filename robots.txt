@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Jain0084.github.io/home_organisation_tools/sitemap.xml
